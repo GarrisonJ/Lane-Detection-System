@@ -13,13 +13,12 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./undistort_output.png "Undistorted"
-[image2]: ./undistorted_road.png "Road Transformed"
-[image3]: ./binary_example.png "Binary Example"
-[image4]: ./warp_example.png "Warp Example"
-[image5]: ./fit_visual.png "Fit Visual"
-[image6]: ./output.png "Output"
-[video1]: ./project_video_output.mp4 "Video"
+[image1]: ../output_images/undistort_output.png "Undistorted"
+[image2]: ../output_images/undistorted_road.png "Road Transformed"
+[image3]: ../output_images/binary_example.png "Binary Example"
+[image4]: ../output_images/warp_example.png "Warp Example"
+[image5]: ../output_images/fit_visual.png "Fit Visual"
+[image6]: ../output_images/output.png "Output"
 
 ---
 
@@ -41,13 +40,13 @@ Finally, the `undistort()` function uses what was returned from `calibrateCamera
 
 I created the function `undistort_image()` to save my parameters to use later in the project. 
 
-![alt text][image1]
+![Undistorted][image1]
 
 ### Pipeline (single images)
 
 #### 1. Provide an example of a distortion-corrected image.
 
-![alt text][image2]
+![Road Transformed][image2]
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
@@ -74,7 +73,7 @@ combined[(s_binary == 1) | (l_binary == 1) & ((gradx == 1) | (mag_binary == 1)) 
 
 Here is an example output of this step (More examples can be found in the cell titled "Print Thresholds images"):
 
-![alt text][image3]
+![Binary Example][image3]
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
@@ -103,7 +102,7 @@ I found these points by guessing and checking. I used OpenCV's `getPerspectiveTr
 
 Here is an example image I got from using this method (More examples can be found in the cell titled "Print birds eye images"):
 
-![alt text][image4]
+![Warp Example][image4]
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
@@ -116,7 +115,7 @@ polynomial (The `fit_poly()` method can be found in a previous cell in `./Lane-D
 
 Here is an example image I got from using this method (More examples can be found in the cell titled "Print detected lanes"):
 
-![alt text][image5]
+![Fit Visual][image5]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
@@ -132,7 +131,7 @@ before returning the value for the final output.
 
 The Jupyter Notebook named `./Lane-Detection-System.ipynb` contains the code for this step. You can find it in the cell with the header "Warp lane back to undistored image".
 
-![alt text][image6]
+![Output][image6]
 
 ---
 
@@ -141,6 +140,8 @@ The Jupyter Notebook named `./Lane-Detection-System.ipynb` contains the code for
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
 The Jupyter Notebook named `./Lane-Detection-System.ipynb` contains the code for this step. You can find it in the cell with the header "Final image process" in the function `process_image()`. The final output is in the final cell of the notebook.
+
+Here's a [link to my video result](../project_video_output.mp4)
 
 ---
 
