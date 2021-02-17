@@ -151,7 +151,7 @@ The Jupyter Notebook named `./Lane-Detection-System.ipynb` contains the code for
 
 The Jupyter Notebook named `./Lane-Detection-System.ipynb` contains the code for this step. You can find it in the cell with the header "Final image process" in the function `process_image()`. The final output is in the final cell of the notebook.
 
-Here's a [link to my video result](../project_video_output.mp4)
+Here's a [link to my video result](project_video_output.mp4)
 
 ---
 
